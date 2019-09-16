@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_text"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:textSize="@dimen/text_size_title"
+            android:textColor="@color/text_color"
+            android:text="Tên thùng"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_text"
+            android:layout_weight="5"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:errorEnabled="true"
+            android:id="@+id/text_input_name_box">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập tên thùng"
+                android:textColorHint="@color/text_color"
+                android:textSize="@dimen/text_size_title"
+                android:textColor="@color/text_color"
+                android:inputType="textCapCharacters"
+                android:id="@+id/edt_name_box"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+
+            android:gravity="center|left"
+            android:textSize="@dimen/text_size_title"
+            android:textColor="@color/text_color"
+            android:text="Mã thùng"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/hqdefault"
+            android:fitsSystemWindows="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/QRBox"/>
+        <Button
+            android:layout_width="@dimen/width_btn"
+            android:layout_height="match_parent"
+            android:text="Quét QR"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:background="@color/bg_button_QRCode"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn kho tạm"
+        android:textSize="@dimen/text_size_title"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="@dimen/margin_Top"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_spiner"
+        android:layout_margin="@dimen/margin_Top"
+        android:id="@+id/spinnerWareHouse"
+        android:background="@color/bg_spiner"></Spinner>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_Top"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_file"
+            android:textStyle="italic|normal"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_title"
+           />
+       <ImageButton
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_marginLeft="@dimen/margin_Top"
+           android:src="@mipmap/add_plus"
+           android:background="@drawable/bg_image_btn"
+           android:scaleType="fitXY"
+           />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyClerViewFile"
+        android:layout_marginTop="@dimen/margin_Top">
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:background="@color/bg_button_QRCode"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_title"
+            android:id="@+id/btnSave"
+           />
+
+    </LinearLayout>
+
+</LinearLayout>

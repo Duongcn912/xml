@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DemoNavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--box_activity-->
+    <string name="name_file">Danh mục hồ sơ</string>
+    <!--drawer_item-->
+   <string-array name="drawer_item">
+       <item>Tra cứu tài liệu</item>
+       <item>Quản lý hồ sơ</item>
+       <item>Tạo yêu cầu xuất/nhập hồ sơ</item>
+       <item>Đăng xuất</item>
+   </string-array>
+</resources>

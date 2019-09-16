@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name ="colorWhite">#ffffff</color>
+
+
+
+    <color name="text_color">#595959</color>
+    <color name="bg_button_QRCode">#039be5</color>
+    <color name="bg_spiner">#CDD7DD</color>
+    <!--layout_header-->
+    <color name="text_name_color">#707070</color>
+    <color name="bg_item_drawer">#BCC1C3</color>
+
+</resources>
